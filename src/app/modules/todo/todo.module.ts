@@ -10,6 +10,7 @@ import {TodoFormUiComponent} from './UI/todo-form-ui/todo-form-ui.component';
 import {FormsModule} from "@angular/forms";
 import {TodoListUiComponent} from './UI/todo-list-ui/todo-list-ui.component';
 import {RouterModule} from "@angular/router";
+import { TodoListItemEditComponent } from './UI/todo-list-item-edit/todo-list-item-edit.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {RouterModule} from "@angular/router";
     TodoPageComponent,
     TodoWidgetComponent,
     TodoFormUiComponent,
-    TodoListUiComponent
+    TodoListUiComponent,
+    TodoListItemEditComponent
   ],
   imports: [
     CommonModule,

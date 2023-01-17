@@ -1,6 +1,8 @@
-<h1>todo-widget works!</h1>
+<h1>todo redux app</h1>
 
-<app-todo-form-ui (create) = 'onCreate($event)'></app-todo-form-ui>
-<app-todo-list-ui (delete) = 'onDelete($event)'
-                  [todoList] = 'todoList$ | async'
+<app-todo-form-ui (create)='onCreate($event)'></app-todo-form-ui>
+<app-todo-list-ui (delete)='onDelete($event)'
+                  (edit)="onEdit($event)"
+                  (toggle)="onToggle($event)"
+                  [todoList]='todoList$ | async'
 ></app-todo-list-ui>
